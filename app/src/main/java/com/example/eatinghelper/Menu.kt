@@ -2,7 +2,7 @@ package com.example.eatinghelper
 
 object Menu {
 
-    private val FoodList = arrayOf(
+    var defaultFoodList = listOf(
         // 热 素
         Food(name = "西红柿炒鸡蛋", isHot = true, isMeat = false),
         Food(name = "炒土豆丝", isHot = true, isMeat = false),
@@ -47,15 +47,20 @@ object Menu {
 
     )
 
-    val hotAndMeatList = FoodList.filter { food: Food -> !food.isSoup && food.isHot && food.isMeat }
+    var foodList: List<Food> = ArrayList<Food>()
 
-    val hotAndVegetableList = FoodList.filter { food: Food -> !food.isSoup && food.isHot && !food.isMeat }
+    fun hotAndMeatList() = foodList.filter { food: Food -> !food.isSoup && food.isHot && food.isMeat }
 
-    val coldAndMeatList = FoodList.filter { food: Food -> !food.isSoup &&!food.isHot && food.isMeat }
+    fun hotAndVegetableList() =
+        foodList.filter { food: Food -> !food.isSoup && food.isHot && !food.isMeat }
 
-    val coldAndVegetableList = FoodList.filter { food: Food -> !food.isSoup && !food.isHot && !food.isMeat }
+    fun coldAndMeatList() =
+        foodList.filter { food: Food -> !food.isSoup && !food.isHot && food.isMeat }
 
-    val coldSoupList = FoodList.filter { food: Food -> food.isSoup }
+    fun coldAndVegetableList() =
+        foodList.filter { food: Food -> !food.isSoup && !food.isHot && !food.isMeat }
+
+    fun coldSoupList() = foodList.filter { food: Food -> food.isSoup }
 
 }
 
@@ -64,4 +69,11 @@ class Food(
     var isHot: Boolean = false,
     var isMeat: Boolean = false,
     var isSoup: Boolean = false
-)
+) {
+    override fun toString(): String {
+        return this.name + "," +
+                this.isHot + "," +
+                this.isMeat + "," +
+                this.isSoup
+    }
+}
