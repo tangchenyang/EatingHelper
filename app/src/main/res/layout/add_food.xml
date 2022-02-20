@@ -2,7 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/text_view_add_food_name"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:text="请输入菜品名称" />
+
+    <Button
+        android:id="@+id/button_add_food_is_hot"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:onClick="showList"
+        android:text="冷热" />
+
+    <Button
+        android:id="@+id/button_add_food_is_meat"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:onClick="showSingleAlertDialog"
+        android:text="荤素" />
+
+    <Button
+        android:id="@+id/button_add_food_is_soup"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:onClick="showMutilAlertDialog"
+        android:text="是否为汤" />
 
 
 </LinearLayout>

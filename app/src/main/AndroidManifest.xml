@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.BreakfastMenuActivity" />
+        <activity android:name=".activity.OnePersonMenuActivity" />
+        <activity android:name=".activity.TwoPersonMenuActivity" />
+        <activity android:name=".activity.FourPersonMenuActivity" />
+        <activity android:name=".activity.AddFoodActivity" />
+        <activity android:name=".activity.AllFoodsMenuActivity" />
     </application>
 
 </manifest>
