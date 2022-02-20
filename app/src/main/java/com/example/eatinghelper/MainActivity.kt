@@ -1,11 +1,13 @@
 package com.example.eatinghelper
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.eatinghelper.activity.*
 import com.example.eatinghelper.entity.Food
@@ -25,11 +27,12 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    @SuppressLint("ResourceAsColor")
     private fun initButton() {
-        val btnToBreakfastMenu = findViewById<Button>(R.id.button_to_breakfast)
-        val btnToOnePersonMenu = findViewById<Button>(R.id.button_to_one_person_menu)
-        val btnToTwoPersonMenu = findViewById<Button>(R.id.button_to_two_person_menu)
-        val btnToFourPersonMenu = findViewById<Button>(R.id.button_to_four_person_menu)
+        val btnToBreakfastMenu = findViewById<TextView>(R.id.button_to_breakfast)
+        val btnToOnePersonMenu = findViewById<TextView>(R.id.button_to_one_person_menu)
+        val btnToTwoPersonMenu = findViewById<TextView>(R.id.button_to_two_person_menu)
+        val btnToFourPersonMenu = findViewById<TextView>(R.id.button_to_four_person_menu)
 
         btnToBreakfastMenu.setOnClickListener {
             val intent = Intent()

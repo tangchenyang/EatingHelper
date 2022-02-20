@@ -8,62 +8,58 @@
     android:background="@drawable/main_background_image"
     tools:context=".MainActivity">
 
-    <Button
+    <TextView
         android:id="@+id/button_to_breakfast"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:text="品质早餐"
         android:textSize="24sp"
-        android:textColor="#e0e0e0"
+        android:textColor="#ffffff"
         android:gravity="center"
-        android:background="#ff0000"
-        android:alpha="0.8"
+        android:background="@drawable/breakfast_menu_overview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="100dp"
         />
 
-    <Button
+    <TextView
         android:id="@+id/button_to_one_person_menu"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:text="精选单人餐"
         android:textSize="24sp"
-        android:textColor="#e0e0e0"
+        android:textColor="#ffffff"
         android:gravity="center"
-        android:background="#00ff00"
-        android:alpha="0.8"
+        android:background="@drawable/one_person_menu_overview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_to_breakfast"
         android:layout_marginTop="30dp" />
 
-    <Button
+    <TextView
         android:id="@+id/button_to_two_person_menu"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:text="精选双人餐"
         android:textSize="24sp"
-        android:textColor="#e0e0e0"
+        android:textColor="#ffffff"
         android:gravity="center"
-        android:background="#000099"
-        android:alpha="0.8"
+        android:background="@drawable/two_person_menu_overview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_to_one_person_menu"
         android:layout_marginTop="30dp" />
 
-    <Button
+    <TextView
         android:id="@+id/button_to_four_person_menu"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:text="精选四人餐"
         android:textSize="24sp"
-        android:textColor="#e0e0e0"
+        android:textColor="#ffffff"
         android:gravity="center"
-        android:background="#ddcc80"
-        android:alpha="0.8"
+        android:background="@drawable/four_person_menu_overview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_to_two_person_menu"
