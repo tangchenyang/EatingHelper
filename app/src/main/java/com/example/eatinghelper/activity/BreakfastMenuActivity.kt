@@ -15,6 +15,7 @@ import com.example.eatinghelper.Menu.defaultFoodList
 import com.example.eatinghelper.R
 import com.example.eatinghelper.service.FoodService
 import com.example.eatinghelper.util.FoodUtil
+import android.widget.ArrayAdapter
 
 class BreakfastMenuActivity : AppCompatActivity() {
 
