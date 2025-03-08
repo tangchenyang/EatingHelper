@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- 添加新的颜色定义 -->
+    <color name="mint_green">#A8E6CF</color>
+    <color name="light_mint">#DCEDC8</color>
+    <color name="soft_green">#88D8B0</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_700">#388E3C</color>
 </resources>
